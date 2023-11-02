@@ -3,10 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./script.js"></script>
-    <title>Rock Paper Scissor</title>
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Rock Paper Scissors</title>
 </head>
 <body>
+    <header>
+        <div class="title"><p>Rock Paper Scissors</p></div>
+        <div class="scoreboard">
+            <div class="score"><p>Player:</p><p id="player-score">0</p></div>
+            <div class="score"><p>Computer:</p><p id="computer-score">0</p></div>
+        </div>
+    </header>
+    <main>
+        <h1>Choose your weapon:</h1>
+        <div class="game-container">
+            <div class="player-choice">
+                <h2>Player:</h2>
+                <div class="image-choices">
+                    <div class="rock-image" id="rock">
+                        <p>Rock</p>
+                        <img src="./images/rock.png" alt="rock">
+                    </div>
+                    <div class="paper-image" id="paper">
+                        <p>Paper</p>
+                        <img src="./images/paper.png" alt="paper">
+                    </div>
+                    <div class="scissor-image" id="scissor">
+                        <p>Scissor</p>
+                        <img src="./images/scissor.jpeg" alt="scissor">
+                    </div>
+                </div>
+            </div>
+            <p>VS</p>
+            <div class="computer-choice">
+                <h2>Computer:</h2>
+                <div id="computer-selection">
+                    <p>Scissor</p>
+                    <img src="./images/scissor.jpeg" alt="scissor" id="scissor">
+                </div>
+            </div>
+        </div>
+
+        <div class="round-result">
+            <p>Round result:</p>
+            <p id="result"></p>
+            <p id="content"></p>
+        </div>
+    <main>
     
 </body>
 </html>
